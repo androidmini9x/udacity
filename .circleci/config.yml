@@ -13,6 +13,7 @@ jobs:
     steps:
       - node/install
       - checkout
+      - aws-cli/setup
       # install dependencies in both appss
       - run:
           name: Front-End Install
